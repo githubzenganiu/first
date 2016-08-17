@@ -4,5 +4,5 @@
 
 c++&amp;python code 
 
-name:zenganiu                  
-mail:2086284702@qq.com
+name: zenganiu                  
+mail: 2086284702@qq.com
