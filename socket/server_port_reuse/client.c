@@ -31,7 +31,7 @@ int main()
     scanf("%s",buf);
     send(client_sockfd,buf,BUFFER_SIZE,0);
     recv(client_sockfd,buf,BUFFER_SIZE,0);
-    printf("receive data from server: %s/n",buf);
+    printf("receive data from server: %s\n",buf);
     close(client_sockfd); 
     return 0; 
 }
