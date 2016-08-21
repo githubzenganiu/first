@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while true
+do 
+    procnum=` ps -ef|grep "test"|grep -v grep|wc -l`
+   if [ $procnum -eq 0 ]; then
+      ./test & 
+   fi
+   sleep 30
+done
+
