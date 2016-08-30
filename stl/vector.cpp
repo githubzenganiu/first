@@ -12,8 +12,5 @@ int main()
 	cout << "vec1.size()"<<vec1.size()<<endl;
 	for (auto it=vec1.begin(); it!=vec1.end(); ++it)
 		cout << *it <<endl;
-	
-
-
 	return 0;
 }
