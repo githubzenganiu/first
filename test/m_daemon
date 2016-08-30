@@ -6,6 +6,5 @@ do
    if [ $procnum -eq 0 ]; then
       ./test & 
    fi
-   sleep 30
 done
 

@@ -25,7 +25,7 @@ int main()
 		perror("server_sockfd creation failed");
 		exit(EXIT_FAILURE);
 	}
-	// 设置套接字选项避免地址使用错误
+	// 设置套接字选项避免地址使用错误 TIME_WAIT状态
 	int on=1;
 	if((setsockopt(server_sockfd,SOL_SOCKET,SO_REUSEADDR,&on,sizeof(on)))<0)
 	{
