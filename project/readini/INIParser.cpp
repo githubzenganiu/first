@@ -13,8 +13,11 @@ string &TrimString(string &str)
 int INIParser::ReadINI(string path)
 {
     ifstream in_conf_file(path.c_str());
-    if(!in_conf_file) 
+    if(!in_conf_file)
+	{
+		cout <<__FILE__<<" "<<__func__<<" "<<__LINE__<<endl;
 		return 0;
+	}
     string str_line = "";
     string str_root = "";
     vector<ININode> vec_ini;

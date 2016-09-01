@@ -11,7 +11,12 @@ using namespace std;
 int main()
 {
     INIParser ini_parser;
-    ini_parser.ReadINI("conf.ini");
+    int ret = ini_parser.ReadINI("conf.ini");
+	if (ret == 0)
+	{
+		cout <<"can't not find file"<<endl;
+		return -1;
+	}
     cout << ini_parser.GetValue("default", "server_port") << endl;
     cout << ini_parser.GetValue("default", "name") << endl;
     ini_parser.Clear();
