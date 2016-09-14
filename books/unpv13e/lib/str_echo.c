@@ -14,4 +14,5 @@ again:
 		goto again;
 	else if (n < 0)
 		err_sys("str_echo: read error");
+	printf("n = &d\n", n);
 }

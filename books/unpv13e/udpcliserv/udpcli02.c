@@ -14,7 +14,7 @@ main(int argc, char **argv)
 	servaddr.sin_len = sizeof(servaddr);
 #endif
 	servaddr.sin_family = AF_INET;
-	servaddr.sin_port = htons(7);
+	servaddr.sin_port = htons(SERV_PORT);
 	Inet_pton(AF_INET, argv[1], &servaddr.sin_addr);
 
 	sockfd = Socket(AF_INET, SOCK_DGRAM, 0);

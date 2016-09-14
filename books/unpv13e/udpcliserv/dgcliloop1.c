@@ -8,8 +8,10 @@ dg_cli(FILE *fp, int sockfd, const SA *pservaddr, socklen_t servlen)
 {
 	int		i;
 	char	sendline[DGLEN];
-
+	PRINTF;
 	for (i = 0; i < NDG; i++) {
+		PRINTF;
 		Sendto(sockfd, sendline, DGLEN, 0, pservaddr, servlen);
 	}
+	PRINTF;
 }

@@ -1,5 +1,4 @@
 #include	"unp.h"
-
 int
 main(int argc, char **argv)
 {
@@ -15,8 +14,7 @@ main(int argc, char **argv)
 	Inet_pton(AF_INET, argv[1], &servaddr.sin_addr);
 
 	sockfd = Socket(AF_INET, SOCK_DGRAM, 0);
-
 	dg_cli(stdin, sockfd, (SA *) &servaddr, sizeof(servaddr));
-
+	PRINTF;
 	exit(0);
 }

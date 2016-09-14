@@ -24,7 +24,7 @@ main(int argc, char **argv)
 		connfd = Accept(listenfd, (SA *) &cliaddr, &clilen);
 
 		if ( (childpid = Fork()) == 0) {	/* child process */
-			Close(listenfd);	/* close listening socket */
+			Close(listenfd);	/* close listening socket,引用计数减一 */
 			str_echo(connfd);	/* process the request */
 			exit(0);
 		}

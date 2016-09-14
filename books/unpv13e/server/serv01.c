@@ -31,6 +31,7 @@ main(int argc, char **argv)
 		}
 
 		if ( (childpid = Fork()) == 0) {	/* child process */
+			printf("create a new process\n");
 			Close(listenfd);	/* close listening socket */
 			web_child(connfd);	/* process request */
 			exit(0);

@@ -1,7 +1,7 @@
 #include	"unp.h"
 
 static doit(int, const char *);
-
+//#define notdef
 void
 main()
 {
@@ -12,6 +12,7 @@ main()
 		err_sys("TCP socket error");
 
 #ifdef notdef
+	printf("tesing \n");
 	bzero(&servaddr, sizeof(servaddr));
 	servaddr.sin_family      = AF_INET;
 	servaddr.sin_port        = htons(9);
