@@ -6,20 +6,6 @@ void *thread_routine(void *args)
 {
 	int args1 = *(int*)args;
 	printf("thread args is %d\n", args1);
-	pid_t pid;
-	pid = fork();
-	if (pid == 0)
-	{
-		printf("chlid process\n");
-	}
-	else if (pid > 0)
-	{
-		printf("parent process\n");
-	}
-	else if (pid < 0)
-	{
-		printf("fork error");
-	}
 	pthread_exit("hello world");
 }
 

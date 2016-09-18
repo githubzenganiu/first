@@ -13,6 +13,7 @@
 #include <pthread.h>
 #include <time.h>
 #include "errors.h"
+#define DEBUG 1 
 
 /*
  * The "alarm" structure now contains the time_t (time since the
