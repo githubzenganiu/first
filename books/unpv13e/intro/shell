@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while true
+do
+	./daytimetcpcli1 127.0.0.1
+done
