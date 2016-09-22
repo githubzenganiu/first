@@ -19,5 +19,6 @@ my_struct_t data = {PTHREAD_MUTEX_INITIALIZER, 0};
 
 int main (int argc, char *argv[])
 {
+	printf("testint static init mutex variable\n");
     return 0;
 }

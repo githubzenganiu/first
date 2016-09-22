@@ -41,5 +41,6 @@ int main(){
 	puts("Killing threadpool");
 	thpool_destroy(thpool);
 	
+	printf("have destroyed threadpool already\n");
 	return 0;
 }

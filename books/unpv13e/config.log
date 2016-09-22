@@ -127,8 +127,8 @@ configure:2307: $? = 0
 configure:2319: result: yes
 configure:2403: checking for t_open in -lnsl
 configure:2434: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lnsl  -lpthread  >&5
-/tmp/ccWvkrc3.o: In function `main':
-/srv/unpv13e/configure:2431: undefined reference to `t_open'
+/tmp/ccHWmMJf.o: In function `main':
+/root/workspace/toekn/books/unpv13e/configure:2431: undefined reference to `t_open'
 collect2: error: ld returned 1 exit status
 configure:2437: $? = 1
 configure: failed program was:
@@ -173,8 +173,8 @@ configure:2591: checking for /root/libresolv.a
 configure:2598: result: no
 configure:2601: checking for res_init in -lresolv
 configure:2632: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lresolv  -lpthread  >&5
-/tmp/ccKnMOn6.o: In function `main':
-/srv/unpv13e/configure:2629: undefined reference to `res_init'
+/tmp/ccj1n87j.o: In function `main':
+/root/workspace/toekn/books/unpv13e/configure:2629: undefined reference to `res_init'
 collect2: error: ld returned 1 exit status
 configure:2635: $? = 1
 configure: failed program was:
@@ -1553,9 +1553,9 @@ configure:6890: $? = 0
 configure:6901: result: yes
 configure:6916: checking for kqueue
 configure:6966: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
-/tmp/ccgdUHc3.o:(.data+0x0): undefined reference to `kqueue'
-/tmp/ccgdUHc3.o: In function `main':
-/srv/unpv13e/configure:7019: undefined reference to `kqueue'
+/tmp/ccs383eD.o:(.data+0x0): undefined reference to `kqueue'
+/tmp/ccs383eD.o: In function `main':
+/root/workspace/toekn/books/unpv13e/configure:7019: undefined reference to `kqueue'
 collect2: error: ld returned 1 exit status
 configure:6969: $? = 1
 configure: failed program was:
@@ -1665,9 +1665,9 @@ configure: failed program was:
 configure:6986: result: no
 configure:6916: checking for kevent
 configure:6966: gcc -o conftest -g -O2 -D_REENTRANT   conftest.c -lpthread  >&5
-/tmp/ccwIN6J5.o:(.data+0x0): undefined reference to `kevent'
-/tmp/ccwIN6J5.o: In function `main':
-/srv/unpv13e/configure:7019: undefined reference to `kevent'
+/tmp/ccWNtIHF.o:(.data+0x0): undefined reference to `kevent'
+/tmp/ccWNtIHF.o: In function `main':
+/root/workspace/toekn/books/unpv13e/configure:7019: undefined reference to `kevent'
 collect2: error: ld returned 1 exit status
 configure:6969: $? = 1
 configure: failed program was:
@@ -1879,6 +1879,7 @@ on zenganiu-virtual-machine
 config.status:628: creating Makefile
 config.status:628: creating Make.defines
 config.status:731: creating config.h
+config.status:981: config.h is unchanged
 
 ## ---------------- ##
 ## Cache variables. ##

@@ -2,5 +2,5 @@
 
 while true
 do
-	./daytimetcpcli1 127.0.0.1
+	./daytimetcpcli1 192.168.232.142 
 done

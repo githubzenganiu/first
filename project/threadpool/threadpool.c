@@ -53,7 +53,7 @@ static CThread_pool *pool = NULL;
 void
 pool_init (int max_thread_num)
 {
-    pool = (CThread_pool *) malloc (sizeof (CThread_pool));
+    pool = (CThread_pool *) malloc (sizeof (CThread_pool));//未检查内存是否分配成功，未初始化内存
 
     pthread_mutex_init (&(pool->queue_lock), NULL);//互斥所和条件变量用之前要初始化
     pthread_cond_init (&(pool->queue_ready), NULL);
@@ -190,7 +190,7 @@ thread_routine (void *arg)
         free (worker);
         worker = NULL;
     }
-    /*这一句应该是不可达的*/
+
     pthread_exit (NULL);
 }
 
@@ -220,7 +220,7 @@ main (int argc, char **argv)
     /*等待所有任务完成*/
     sleep (5);
     /*销毁线程池*/
-    pool_destroy ();
+    pool_destroy();
 
     free (workingnum);
     return 0;

@@ -17,8 +17,6 @@ int main()
 		in.getline(buffer, LEN);
 		cout << buffer;
 		cout << "\n";
-		//in >>  buffer;
-		//cout <<  " "<<buffer;
 	}
 	in.close();
 	return 0;

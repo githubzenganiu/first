@@ -14,7 +14,7 @@ SOURCES=alarm.c	alarm_cond.c	alarm_fork.c	alarm_mutex.c	\
 	inertia.c	lifecycle.c	mutex_attr.c	\
 	mutex_dynamic.c	mutex_static.c	once.c	pipe.c	putchar.c	\
 	rwlock_main.c	rwlock_try_main.c		\
-	sched_attr.c	sched_thread.c	\
+	sched_attr.c	sched_thread.c	semaphore_wait\
 	server.c	\
 	sigwait.c	susp.c	thread.c \
 	thread_attr.c	thread_error.c	trylock.c	tsd_destructor.c \
@@ -31,8 +31,8 @@ sched_thread:
 	${CC} ${CFLAGS} ${RTFLAGS} ${LDFLAGS} -o $@ sched_thread.c
 #semaphore_signal:
 #	${CC} ${CFLAGS} ${RTFLAGS} ${LDFLAGS} -o $@ semaphore_signal.c
-#semaphore_wait:
-#	${CC} ${CFLAGS} ${RTFLAGS} ${LDFLAGS} -o $@ semaphore_wait.c
+semaphore_wait:
+	${CC} ${CFLAGS} ${RTFLAGS} ${LDFLAGS} -o $@ semaphore_wait.c
 #sigev_thread:
 #	${CC} ${CFLAGS} ${RTFLAGS} ${LDFLAGS} -o $@ sigev_thread.c
 susp:
