@@ -10,7 +10,7 @@ void finish_with_error(MYSQL *con)
 
 int main(int argc, char **argv)
 {
-  FILE *fp = fopen("woman2.jpg", "wb");
+  FILE *fp = fopen("woman2.png", "wb");
   
   if (fp == NULL) 
   {
