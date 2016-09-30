@@ -124,7 +124,7 @@ void main(){
     //char a[]="[([234][dfg])]";
 	char a[256] = {0};
 	fgets(a,256, stdin);
-	printf("%d\n", strlen(a));
+	printf("inputs length is %d\n", strlen(a));
 
     S = (pStack)malloc(sizeof(Stack));
 
