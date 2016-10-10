@@ -12,7 +12,7 @@
 
 class Strategy;
 
-class Context//踞黨
+class Context
 {
 public:
 	Context(Strategy *pStrategy);
@@ -20,10 +20,10 @@ public:
 
 	void ContextInterface();
 private:
-	Strategy* m_pStrategy;//踞黨婦彰鏝數
+	Strategy* m_pStrategy;
 };
 
-class Strategy//鏝數
+class Strategy
 {
 public:
 	virtual ~Strategy(){}
@@ -31,7 +31,7 @@ public:
 	virtual void AlgorithmInterface() = 0;
 };
 
-class ConcreateStrategyA//鏝數1
+class ConcreateStrategyA
 	: public Strategy
 {
 public:
@@ -41,7 +41,7 @@ public:
 };
 
 
-class ConcreateStrategyB//鏝數1
+class ConcreateStrategyB
 	: public Strategy
 {
 public:

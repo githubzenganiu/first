@@ -10,8 +10,10 @@ int main()
 	mp1.insert(pair<int, string>(2, "word"));
 	mp1.insert(pair<int, string>(3, "sentence"));
 	mp1.insert(pair<int, string>(4, "text"));
-	for (auto it = mp1.begin(); it!=mp1.end(); ++it)
-		cout << it->first <<" "<<it->second<<endl;
+	//for (auto it = mp1.begin(); it!=mp1.end(); ++it)
+	//	cout << it->first <<" "<<it->second<<endl;
+	mp1[4] = "liz";	
+	cout <<mp1[4]<<endl;
 	cout <<"mp1.size() " <<mp1.size()<<endl;
 	return 0;
 }

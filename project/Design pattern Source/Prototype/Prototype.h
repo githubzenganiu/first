@@ -10,7 +10,6 @@
 #ifndef PROTOTYPE_H
 #define PROTOTYPE_H
 
-// 虚拟基类,所有原型的基类,提供Clone接口函数
 class Prototype
 {
 public:
@@ -20,19 +19,17 @@ public:
 	virtual Prototype* Clone() = 0;
 };
 
-// 派生自Prototype,实现Clone方法
 class ConcreatePrototype1
 	: public Prototype
 {
 public:
 	ConcreatePrototype1();
-	ConcreatePrototype1(const ConcreatePrototype1&);
+	ConcreatePrototype1(const ConcreatePrototype1&);//copy constructor
 	virtual ~ConcreatePrototype1();
 
 	virtual Prototype* Clone();
 };
 
-// 派生自Prototype,实现Clone方法
 class ConcreatePrototype2
 	: public Prototype
 {

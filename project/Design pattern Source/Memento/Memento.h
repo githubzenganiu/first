@@ -34,8 +34,6 @@ private:
 	State		m_State;
 };
 
-// 把Memento的接口函数都设置为私有的,而Originator是它的友元,
-// 这样保证了只有Originator可以对其访问
 class Memento
 {
 private:

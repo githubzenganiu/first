@@ -14,7 +14,6 @@ typedef int DATA;
 
 class Iterater;
 
-// 容器的抽象基类
 class Aggregate
 {
 public:
@@ -25,7 +24,6 @@ public:
 	virtual DATA GetItem(int nIndex) = 0;
 };
 
-// 迭代器的抽象基类
 class Iterater
 {
 public:
@@ -39,7 +37,6 @@ public:
 private:
 };
 
-// 一个具体的容器类,这里是用数组表示
 class ConcreateAggregate
 	: public Aggregate
 {
@@ -56,7 +53,6 @@ private:
 	DATA *m_pData;
 };
 
-// 访问ConcreateAggregate容器类的迭代器类
 class ConcreateIterater
 	: public Iterater
 {

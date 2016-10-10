@@ -12,7 +12,6 @@
 
 class Implementor;
 
-// 维护一个Implementor类的指针
 class Abstraction
 {
 public:
@@ -22,10 +21,9 @@ public:
 	void Operation();
 
 protected:
-	Implementor* m_pImplementor;
+	Implementor* m_pImplementor;//pimpl
 };
 
-// 为实现Abstraction定义的抽象基类,定义了实现的接口函数
 class Implementor
 {
 public:
@@ -35,7 +33,6 @@ public:
 	virtual void OperationImpl() = 0;
 };
 
-// 继承自Implementor,是Implementor的不同实现之一
 class ConcreateImplementorA
 	: public Implementor
 {
@@ -46,7 +43,6 @@ public:
 	virtual void OperationImpl();
 };
 
-// 继承自Implementor,是Implementor的不同实现之一
 class ConcreateImplementorB
 	: public Implementor
 {

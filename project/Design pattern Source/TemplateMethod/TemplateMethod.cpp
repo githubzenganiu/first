@@ -4,7 +4,7 @@
 	author:		李创
                 http://www.cppblog.com/converse/
 
-	purpose:	TemplateMethod模式的演示代码
+	purpose:	TemplateMethod
 *********************************************************************/
 
 #include "TemplateMethod.h"

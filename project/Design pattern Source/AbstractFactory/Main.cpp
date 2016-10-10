@@ -24,7 +24,7 @@ int main()
 	delete pFactory2;
 	delete pProductB;
 
-	system("clear");
+//	system("clear");
 
 	return 0;
 }

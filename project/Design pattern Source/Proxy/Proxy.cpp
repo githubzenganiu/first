@@ -34,7 +34,6 @@ Proxy::~Proxy()
 
 void Proxy::Request()
 {
-	// 需要使用RealSubject的时候才去初始化
 	if (NULL == m_pRealSubject)
 	{
 		std::cout << "Request By Proxy\n";
