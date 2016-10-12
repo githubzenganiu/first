@@ -1,6 +1,7 @@
 #include <signal.h>
 #include <stdio.h>
 #include <unistd.h>
+
 void ouch(int sig)
 {
   printf( " I got signal %d\n", sig);

@@ -33,7 +33,8 @@ int main()
      */
     copy (coll1.begin(), coll1.end(),     // source
           coll2.begin());                 // destination
-
+	for (vector<int>::iterator it=coll2.begin(); it!=coll2.end(); ++it)
+		cout <<*it<<endl;
     /* create third collection with enough room
      * - initial size is passed as parameter
      */
@@ -42,4 +43,7 @@ int main()
     // copy elements from first into third collection
     copy (coll1.begin(), coll1.end(),     // source
           coll3.begin());                 // destination
+	for (deque<int>::iterator it=coll3.begin(); it!=coll3.end(); ++it)
+		cout <<*it<<endl;
+
 }

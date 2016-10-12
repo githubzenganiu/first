@@ -55,7 +55,7 @@ pool_init (int max_thread_num)
 {
     pool = (CThread_pool *) malloc (sizeof (CThread_pool));//未检查内存是否分配成功，未初始化内存
 
-    pthread_mutex_init (&(pool->queue_lock), NULL);//互斥所和条件变量用之前要初始化
+    pthread_mutex_init (&(pool->queue_lock), NULL);//互斥suo和条件变量用之前要初始化
     pthread_cond_init (&(pool->queue_ready), NULL);
 
     pool->queue_head = NULL;//链表头指针

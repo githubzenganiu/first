@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 class uncopyable
 {
 protected:
@@ -9,6 +10,7 @@ private:
 	uncopyable& operator=(const uncopyable&);
 	uncopyable(const uncopyable&); 
 };
+
 class test:private uncopyable
 {
 private:
@@ -29,5 +31,4 @@ int main()
 //	test t2 = t1;
 	return 0;
 }
-
 

@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<iostream>
+
 int main()
 {
 	for (unsigned char i = 10; i>=0; --i)
