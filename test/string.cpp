@@ -2,6 +2,7 @@
 #include<string>
 #include<iterator>
 using namespace std;
+
 int main()
 {
 	string *ptr = new string("China Daily");

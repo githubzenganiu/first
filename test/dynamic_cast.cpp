@@ -17,7 +17,8 @@ int main () {
     	ptr_c = dynamic_cast< Derived_Class *>(ptr_b);
     	if (ptr_c ==0) cout << "Null pointer on second type-cast" << endl;
 
-  	} catch (exception& my_ex) {cout << "Exception: " << my_ex.what();}
+  	} 
+	catch (exception& my_ex) {cout << "Exception: " << my_ex.what();}
   return 0;
 }
 
