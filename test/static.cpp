@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
+
 static int g_num;
+
 void func(void)
 {
 	static int num = 1;

@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 int main()
 {
 	char *ptr = calloc(5, sizeof(char));
@@ -11,6 +12,7 @@ int main()
 	{
 		printf("allocate memory filed\n");
 	}
+
 	free(ptr);
 	return 0;
 }

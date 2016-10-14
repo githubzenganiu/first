@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 size_t count = 0;
 #define EXEC_BUMP(func) (func(), ++count)
 
