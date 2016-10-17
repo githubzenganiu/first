@@ -10,6 +10,7 @@ void func(void)
 	num++;
 
 }
+
 int main()
 {
 	cout <<"g_num is "<<g_num<<endl;

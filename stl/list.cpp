@@ -2,6 +2,7 @@
 #include<list>
 #include<string>
 using namespace std;
+
 int main()
 {
 	list<int> l1;
@@ -23,8 +24,6 @@ int main()
 	l1.unique();
 	for (auto it =l1.begin(); it!=l1.end(); ++it )
 		cout << *it<<endl;
-	//cout <<"l1.size() "<<l1.size()<<endl;
-	//cout <<"l1.size() "<<l1.size()<<endl;
 	cout <<"l1.size() "<<l1.size()<<endl;
 	l1.insert(l1.begin(),99);
 	for (auto it =l1.begin(); it!=l1.end(); ++it )

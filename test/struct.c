@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 struct info
 {
 	int num;
@@ -6,6 +7,7 @@ struct info
 	char * ptr;
 
 };
+
 typedef struct hk
 {
 	double lon;

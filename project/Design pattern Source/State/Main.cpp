@@ -4,7 +4,6 @@
 	author:		李创
                 http://www.cppblog.com/converse/
 
-	purpose:	State模式的测试代码
 *********************************************************************/
 
 #include "State.h"
