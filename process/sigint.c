@@ -7,7 +7,7 @@ void ouch(int sig)
   printf( " I got signal %d\n", sig);
 }
 
-int main()
+int main(int argc, char *argv[])
 {
   struct sigaction act;
   act.sa_handler = ouch;
