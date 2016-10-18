@@ -2,7 +2,10 @@
 #include<list>
 #include<string>
 using namespace std;
-
+bool divby5(int x)
+{
+	return x%5?0:1;
+}
 int main()
 {
 	list<int> l1;
@@ -15,7 +18,7 @@ int main()
 	for (auto it =l1.begin(); it!=l1.end(); ++it )
 		cout << *it<<endl;
 	cout <<"l1.size() "<<l1.size()<<endl;
-	l1.reverse();
+	/*l1.reverse();
 	for (auto it =l1.begin(); it!=l1.end(); ++it )
 		cout << *it<<endl;
 	l1.sort();
@@ -31,5 +34,16 @@ int main()
 	cout <<l1.empty()<<endl;
 	l1.clear();
 	cout <<"l1.empty() "<<l1.empty()<<endl; 
+	
+	l1.remove(3);
+	for (auto it =l1.begin(); it!=l1.end(); ++it )
+		cout << *it<<endl;
+	cout <<"l1.size() "<<l1.size()<<endl;
+	*/
+	l1.remove_if(divby5);
+	for (auto it =l1.begin(); it!=l1.end(); ++it )
+		cout << *it<<endl;
+	cout <<"l1.size() "<<l1.size()<<endl;
+
 	return 0;
 }
