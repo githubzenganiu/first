@@ -1,0 +1,1 @@
+cmd_/home/zenganiu/Desktop/chrdev/chrdev.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/zenganiu/Desktop/chrdev/chrdev.ko /home/zenganiu/Desktop/chrdev/chrdev.o /home/zenganiu/Desktop/chrdev/chrdev.mod.o
