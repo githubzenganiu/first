@@ -1,2 +1,2 @@
-/home/zenganiu/Desktop/hello/hello.ko
-/home/zenganiu/Desktop/hello/hello.o
+/root/workspace/toekn/kernel/hello/hello.ko
+/root/workspace/toekn/kernel/hello/hello.o

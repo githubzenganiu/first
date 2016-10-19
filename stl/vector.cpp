@@ -29,7 +29,12 @@ int main()
 	for (auto it=vec1.begin(); it!=vec1.end(); ++it)
 		cout << *it <<'\t';
 	cout <<endl;
-
+	if (vec1.empty())
+	{
+		cout <<"vec1 is empty "<<endl;
+	}
+	else
+		cout <<"vec1 is not empty"<<endl;
 
 
 	return 0;

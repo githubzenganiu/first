@@ -26,11 +26,13 @@ void *operator new[](size_t size)
 	cout << BOLDRED<<"OPERATOR NEW[]"<<RESET<<endl;
 	return malloc(size);	
 }
+
 void *operator new(size_t size)
 {
 	cout <<"\e[32m\e[1mOPERATOR NEW\e[0m"<<endl;
 	return malloc(size);	
 }
+
 void operator delete[](void *ptr)
 {
 	
@@ -46,6 +48,7 @@ void operator delete(void *ptr)
 	free(ptr);
 //	ptr = NULL;
 }
+
 int main()
 {
 	int *p = new int[4];

@@ -1,11 +1,14 @@
 #include<iostream>
 #include<list>
 #include<string>
+
 using namespace std;
+
 bool divby5(int x)
 {
 	return x%5?0:1;
 }
+
 int main()
 {
 	list<int> l1;

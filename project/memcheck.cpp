@@ -70,7 +70,7 @@ public:
 //---------------------------------------------------------------
 MemStack mem_stack;
 //---------------------------------------------------------------
-// 重载new,new[],delete,delete[] 
+// 重载全局的new,new[],delete,delete[] 
 //---------------------------------------------------------------
 void* operator new(size_t size, const char* file, unsigned int line) {
   void* ptr = malloc(size);
@@ -111,8 +111,9 @@ void good_code() {
 //---------------------------------------------------------------
 int main() {
   good_code();
-  bad_code();
+ // bad_code();
  char *ptr = new char[100];
+// delete[]ptr;
   mem_stack.Print();
   //system("PAUSE");
   return 0;

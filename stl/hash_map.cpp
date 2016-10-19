@@ -2,6 +2,7 @@
 #include<map>
 #include<iostream>
 #include<hash_map>
+
 using namespace std;
 using namespace __gnu_cxx;
 
