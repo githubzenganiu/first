@@ -43,5 +43,6 @@ int main()
 {
 	(singlton::getInstance())->show();	
 	(singlton::getInstance())->show();	
+	(singlton::getInstance())->show();
 	return 0;
 }

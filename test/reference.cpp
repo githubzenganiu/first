@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 class object{
 public:
 	explicit object(int a):a(a) {}
