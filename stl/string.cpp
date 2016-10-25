@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
 int main()
 {
 	string s1;
@@ -30,6 +31,9 @@ int main()
 	string s2;
 	std::getline(std::cin, s2);
 	cout <<"s2 is :"<<s2<<endl; 
+	cout <<"the sizeof s2 is "<<sizeof(s2)<<endl;
+	cout <<"s2.capacity() = "<<s2.capacity()<<endl;
+	cout <<"s2.size() = "<<s2.size()<<endl;
 	return 0;
 }
 

@@ -16,5 +16,8 @@ int main()
 	hash_map<int, string>::const_iterator it;
 	for (it=hmp1.begin(); it!=hmp1.end(); ++it)
 		cout <<it->first<<"\t"<<it->second<<endl;
+	hmp1.erase(2);
+	for (it=hmp1.begin(); it!=hmp1.end(); ++it)
+		cout <<it->first<<"\t"<<it->second<<endl;
 	return 0;
 }

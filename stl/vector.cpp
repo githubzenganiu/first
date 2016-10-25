@@ -3,11 +3,13 @@
 #include<algorithm>
 using namespace std;
 #define LEN 20
+
 bool divby3(int x)
 {
 
 	return x%3?0:1;
 }
+
 int main()
 {
 	vector<int> vec1;
@@ -35,7 +37,12 @@ int main()
 	}
 	else
 		cout <<"vec1 is not empty"<<endl;
-
+	vector<int > vv;
+	for (int i=0; i<100; ++i)
+		vv.push_back(i);
+	
+	cout << "vv.capacity()"<<vv.capacity()<<endl;
+	cout << "vv.size()"<<vv.size()<<endl;
 
 	return 0;
 }

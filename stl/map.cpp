@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
 	map<int, string> mp1;
+
 	mp1.insert(pair<int, string>(1, "byte"));
 	cout << "mp1[1] "<<mp1[1]<<endl;
 	mp1.insert(pair<int, string>(2, "word"));

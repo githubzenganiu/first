@@ -5,8 +5,6 @@ class C
 public:
 	C(int a_):a_(a_) {}
 	int a_;
-
-
 };
 
 int main()

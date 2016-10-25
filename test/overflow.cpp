@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<limits.h>
 #include<iostream>
+
 int main(int argc, char **argv)
 {
 	unsigned char x = 0xff;

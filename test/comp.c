@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int main()
 {
 	char *s1 = "hello";

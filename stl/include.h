@@ -1,5 +1,7 @@
 #ifndef _INCLUDE_H_
 #define _INLCUDE_H_
+
+#include<fstream>
 #include<memory>
 #include<iostream>
 #include<vector>

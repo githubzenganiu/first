@@ -1,24 +1,53 @@
-#include <iostream>
-#include <exception>
+#include<iostream>
 using namespace std;
+class base{
+public:
+	explicit base(int num):num(num) {}
+	virtual void display(void)
+	{
+		cout <<num<<endl;
+	}
+	virtual ~base()
+	{
 
-class Base_Class { virtual void dummy() {} };
-class Derived_Class: public Base_Class { int a; };
+	}
+protected:
+	int num;
 
-int main () {
-  try {
- 	Base_Class * ptr_a = new Derived_Class;
- 	Base_Class * ptr_b = new Base_Class;
- 	Derived_Class * ptr_c;
+};
 
-    	ptr_c = dynamic_cast< Derived_Class *>(ptr_a);
-    	if (ptr_c ==0) cout << "Null pointer on first type-cast" << endl;
+class derived: public base
+{
+public:
+	derived(int num, float b):base(num),b(b){}
+	virtual void display(void)
+	{
+		cout <<num<<" "<<b<<endl;
+	}
+private:
+	float b;
+};
 
-    	ptr_c = dynamic_cast< Derived_Class *>(ptr_b);
-    	if (ptr_c ==0) cout << "Null pointer on second type-cast" << endl;
+int main()
+{
+	base b1(2);
+	b1.display();
+	derived d1(3, 1.4);
+	d1.display();
+	base *pb1 = new derived(34, 3.14);
+	pb1->display();
+	delete pb1;
 
-  	} 
-	catch (exception& my_ex) {cout << "Exception: " << my_ex.what();}
-  return 0;
+	base *pb2 = new base(100);
+	pb2->display();
+	delete pb2;
+	
+	
+	base *pb3 = new derived(99, 100.1);
+	derived *pd1 = dynamic_cast<derived*>(pb3);//dynamic_cast
+	if (pd1 != NULL)
+		pd1->display();
+	else
+		cout <<"convert failed"<<endl;
+	return 0;
 }
-

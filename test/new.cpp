@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 class NoHeap
 {
 public:
@@ -13,6 +14,7 @@ private:
 	void *operator new[](size_t);
 	void operator delete[](void *);
 };
+
 int main()
 {
 	NoHeap n1(100);

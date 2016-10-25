@@ -25,5 +25,18 @@ int main()
 
 	cout <<"set size is "<<s.size()<<endl;
 	cout <<"set maxsize is "<<s.max_size()<<endl;
+	set<string> sset;
+	sset.insert("China");
+	sset.insert("Japan");
+	sset.insert("America");
+	sset.insert("Britain");
+	sset.insert("India");
+	for (auto it=sset.begin(); it!=sset.end(); ++it)
+		cout << *it <<'\t';
+	cout <<endl;
+	sset.erase("Japan");
+	for (auto it=sset.begin(); it!=sset.end(); ++it)
+		cout << *it <<'\t';
+	cout <<endl;
 	return 0;
 }

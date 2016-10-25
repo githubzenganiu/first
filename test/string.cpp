@@ -9,6 +9,6 @@ int main()
 	cout<<ptr->capacity()<<endl;
 	cout << ptr->size()<<endl;
 	cout <<ptr->at(0)<<endl;
-	string<char>::iterator it;
+	delete ptr;
 	return 0;
 }

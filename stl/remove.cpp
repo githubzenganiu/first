@@ -14,6 +14,24 @@ int main()
 	for (auto it=v.begin(); it!=v.end(); ++it)
 		cout << *it <<'\t';
 	cout <<endl;
+	list<int> list1;
+	list1.push_back(1);
+	list1.push_back(2);
+	list1.push_back(90);
+	list1.push_back(23);
+	list1.push_back(0);
+	for (auto it=list1.begin(); it!=list1.end(); ++it)
+		cout << *it <<'\t';
+	cout <<endl;
+	
+	list1.remove(23);
+	for (auto it=list1.begin(); it!=list1.end(); ++it)
+		cout << *it<<'\t' ;
+	cout <<endl;
+	list1.remove(23);
+
+
+
 	return 0;
 }
 
