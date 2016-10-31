@@ -20,7 +20,7 @@ public:
 private:
 	explicit singlton(int a):a(a) {}
 	int a;
-	//static singleton * ptr_instance;
+
 	static SPTR ptr_instance;
 	
 };
@@ -31,11 +31,11 @@ SPTR  singlton::getInstance()
 {
 	if(ptr_instance == nullptr)
 	{
-		ptr_instance.reset(new singlton(1));
+		//ptr_instance.reset(new singlton(1));
+		ptr_instance = shared_ptr<singlton>(new singlton(2));
 
 	}
 	return ptr_instance;
-
 
 }
 

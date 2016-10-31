@@ -11,7 +11,6 @@ namespace std
 		void show(void) const;
 	private:
 		string s;
-
 	};
 	logo::logo(const string &s):s(s)
 	{

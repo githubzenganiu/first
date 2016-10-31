@@ -34,6 +34,7 @@ int binary_search(int array[], int n, int key)
 	
 
 }
+
 int main()
 {
 	int array[6] = {11,2,3,21,13,3};

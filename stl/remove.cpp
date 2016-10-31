@@ -1,6 +1,7 @@
 #include"include.h"
 using namespace std;
 #define NUM 10
+
 int main()
 {
 	vector<int> v;
