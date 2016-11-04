@@ -1,6 +1,7 @@
 #include<new>
 #include<iostream>
 #include<cstdlib>
+
 void outOfMem()
 {
 	std::cerr<<"Unable to satify request for memory"<<std::endl;

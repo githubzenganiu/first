@@ -4,7 +4,7 @@
 
 int main(int argc, char **argv)
 {
-	unsigned char x = 0xff;
+	/*unsigned char x = 0xff;
 	printf("%d\n", ++x);
 	signed char y = 0x7f;
 	printf("%d\n", ++x);
@@ -17,6 +17,13 @@ int main(int argc, char **argv)
 	unsigned char c = 0;
 	--c;
 	std::cout<<(int)c<<std::endl;
-
+*/
+	unsigned int c = UINT_MAX;
+	c++;
+	std::cout<<c<<std::endl;
+	std::cout<<"INT_MIN = "<<INT_MIN<<std::endl;
+	int ic = INT_MAX;
+	ic++;//整型回绕
+	std::cout<<ic<<std::endl;
 	return 0;
 }

@@ -1,5 +1,6 @@
 #include<stdio.h>
 int g_a = 100;
+
 int main()
 {
 	int a = 0;

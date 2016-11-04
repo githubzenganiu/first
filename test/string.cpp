@@ -2,6 +2,7 @@
 #include<string>
 #include<iterator>
 using namespace std;
+const string epass_name("token");
 
 int main()
 {
@@ -10,5 +11,6 @@ int main()
 	cout << ptr->size()<<endl;
 	cout <<ptr->at(0)<<endl;
 	delete ptr;
+	cout << epass_name<<endl;
 	return 0;
 }

@@ -1,6 +1,7 @@
 #include<iostream>
 #include<typeinfo>
 #include<exception>
+
 class Polymorphic
 {
 	virtual void member()

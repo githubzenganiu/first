@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 struct node
 {
 	char a;
@@ -7,6 +8,7 @@ struct node
 	int d;
 
 };
+
 int main()
 {
 	struct node s = {3, 5, 6, 99};

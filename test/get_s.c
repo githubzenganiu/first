@@ -1,4 +1,3 @@
-
 #define __STDC_WANT_LIB_EXT1__1
 #include<stdio.h>
 int main()

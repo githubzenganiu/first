@@ -18,6 +18,6 @@ int main()
 {
 	object *ptr = new object(1);
 	delete ptr;
-//	object o1(22);
+
 	return 0;
 }

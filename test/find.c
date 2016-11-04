@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int liner_find(int array[], int n, int key)
 {
 	for (int i=0; i<n; ++i)
