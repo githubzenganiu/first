@@ -43,6 +43,8 @@ int main()
 	
 	cout << "vv.capacity()"<<vv.capacity()<<endl;
 	cout << "vv.size()"<<vv.size()<<endl;
-
+	vv.shrink_to_fit();
+	cout << "vv.capacity()"<<vv.capacity()<<endl;
+	cout << "vv.size()"<<vv.size()<<endl;
 	return 0;
 }

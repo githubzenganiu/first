@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<assert.h>
+
 void *memcpy(void *dest, const void *src, size_t n)
 {
 	assert(dest !=NULL && src != NULL);
@@ -12,6 +13,7 @@ void *memcpy(void *dest, const void *src, size_t n)
 	return dest;
 
 }
+
 int main()
 {
 	int a = 10;

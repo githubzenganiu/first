@@ -8,9 +8,11 @@ struct object
 int a;
 string b;
 };
+
 int main()
 {
 	vector<object> array2;
+	
 	object obj1{1, "times"};
 	array2.push_back(obj1);
 
