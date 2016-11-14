@@ -6,6 +6,7 @@
 #include<boost/noncopyable.hpp>
 using namespace std;
 using namespace boost;
+
 class Mutex:noncopyable{
     public:
         Mutex(){
@@ -24,6 +25,7 @@ class Mutex:noncopyable{
     private:
         mutable pthread_mutex_t mutex;
 };
+
 class MutexLockGuard:noncopyable{
     public:
         explicit MutexLockGuard(Mutex& mutex):mutex_(mutex){//显示构造

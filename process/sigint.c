@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
   act.sa_flags = 0;
 
   sigaction(SIGINT, &act, 0);
-  while(1) {
+  	while(1) {
     printf("Hello World!\n");
     sleep(1);
   }

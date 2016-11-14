@@ -31,8 +31,6 @@ int main()
 	cout <<endl;
 	list1.remove(23);
 
-
-
 	return 0;
 }
 
