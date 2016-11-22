@@ -212,7 +212,7 @@ main (int argc, char **argv)
     /*连续向池中投入10个任务*/
     int *workingnum = (int *) malloc (sizeof (int) * 10);
     int i;
-    for (i = 0; i < 10; i++)
+    for (i = 0; i < 20; i++)
     {
         workingnum[i] = i;
         pool_add_worker (myprocess, &workingnum[i]);
