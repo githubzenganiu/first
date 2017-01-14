@@ -1,1 +1,0 @@
-gcc last_row_id.c -o last_row_id  -std=c99  `mysql_config --cflags --libs`

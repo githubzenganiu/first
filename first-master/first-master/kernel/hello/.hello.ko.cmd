@@ -1,1 +1,0 @@
-cmd_/root/workspace/toekn/kernel/hello/hello.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /root/workspace/toekn/kernel/hello/hello.ko /root/workspace/toekn/kernel/hello/hello.o /root/workspace/toekn/kernel/hello/hello.mod.o

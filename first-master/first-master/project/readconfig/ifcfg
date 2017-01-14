@@ -1,3 +1,0 @@
-DEVICE=eno1
-ONBOOT=yes
-DNS1=8.8.8.8

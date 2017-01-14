@@ -1,3 +1,0 @@
-make::China:
-yes:string:funs
-mmm:lll:hello
