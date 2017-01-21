@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
+
 void *thread_routine(void *args)
 {
 	int num = *(int*)args;

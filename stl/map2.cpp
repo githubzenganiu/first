@@ -5,6 +5,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+
 	map<int, string>mp;
 	mp.insert(pair<int,string>(1,"tesing"));
 	mp[1] = "China";
@@ -14,5 +15,6 @@ int main(int argc, char *argv[])
 	map<int, string>::iterator it;
 	for (auto it = mp.begin(); it!=mp.end(); ++it)
 		cout <<it->first<<" "<<it->second<<endl;
+
 	return 0;
 }

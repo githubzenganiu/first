@@ -1,6 +1,8 @@
 #include <iostream>
 #include<string>
+
 using namespace std;
+
 #include "boost/lexical_cast.hpp"
 int main()
 {

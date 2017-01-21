@@ -26,7 +26,9 @@ private:
 	float b;
 
 };
+
 int object::num = 1000;
+
 int main()
 {
 	object ob1(1,1.2);
