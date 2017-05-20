@@ -1,0 +1,1 @@
+cmd_/home/zenganiu/Desktop/demo/mycode/kernel/hello/hello.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/zenganiu/Desktop/demo/mycode/kernel/hello/hello.ko /home/zenganiu/Desktop/demo/mycode/kernel/hello/hello.o /home/zenganiu/Desktop/demo/mycode/kernel/hello/hello.mod.o
